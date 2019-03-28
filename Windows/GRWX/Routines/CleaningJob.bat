@@ -100,17 +100,6 @@ echo Nettoyage - etape 2 - nettoyage
 echo:
 
 echo:
-echo Si ccleaner est installe - cleaning par defaut et se fermer
-echo:
-
-if EXIST "%programfiles%\CCleaner\CCleaner64.exe" (
-	"%programfiles%\CCleaner\CCleaner64.exe" /AUTO
-) else if EXIST "%programfiles%\CCleaner\CCleaner.exe" (
-	"%programfiles%\CCleaner\CCleaner.exe" /AUTO
-)
-echo:
-echo:
-echo:
 
 start /b /wait CLEANMGR /sagerun:12 
 

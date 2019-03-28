@@ -96,20 +96,6 @@ echo:
 
 :: etape 2 : nettoyage
 echo:
-echo Nettoyage - etape 2 - nettoyage
-echo:
-
-echo:
-echo Si ccleaner est installe - cleaning par defaut et se fermer
-echo:
-
-if EXIST "%programfiles%\CCleaner\CCleaner64.exe" (
-	start "" /D "%~dp0\" /HIGH CCleaner64.lnk
-) else (
-	if EXIST "%programfiles%\CCleaner\CCleaner.exe" (
-		start "" /b /D "%~dp0\" /HIGH CCleaner.lnk
-	)
-)
 echo:
 echo:
 echo:
